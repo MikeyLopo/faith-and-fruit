@@ -24,8 +24,8 @@
     <div class="space-x-4">
       <a href="#" class="text-gray-600 hover:text-emerald-700">Home</a>
       <a href="#" class="text-gray-600 hover:text-emerald-700">Blog</a>
-      <a href="#" class="text-gray-600 hover:text-emerald-700">About</a>
-      <a href="#" class="text-gray-600 hover:text-emerald-700">Contact</a>
+      <a href="#about" class="text-gray-600 hover:text-emerald-700">About</a>
+      <a href="#prayer" class="text-gray-600 hover:text-emerald-700">Prayer Request</a>
     </div>
   </nav>
 
@@ -44,6 +44,40 @@
         <p class="text-gray-700 mb-4">What it really means to remain in Christ and let His life flow through ours. (John 15:1-5)</p>
         <a href="#" class="text-emerald-800 font-semibold underline">Read More</a>
       </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-4 py-16 bg-emerald-50">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl text-emerald-800 font-semibold mb-4 text-center">About Faith and Fruit</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Faith and Fruit was born out of a desire to walk with Jesus daily and help others grow in spiritual maturity. Our mission is to encourage believers to deepen their faith and live lives that reflect the fruit of the Spirit. Whether you're new to your walk with Christ or have been journeying with Him for years, this space is for you—real, rooted, and refreshingly simple.
+      </p>
+    </div>
+  </section>
+
+  <!-- Prayer Request Form -->
+  <section id="prayer" class="px-4 py-16 bg-white">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-3xl text-emerald-800 font-semibold mb-6 text-center">Prayer Requests</h3>
+      <p class="text-gray-600 text-center mb-8">We would be honored to pray with and for you. Fill out the form below, and we’ll lift your request to the Lord.</p>
+      <form name="prayer" method="POST" data-netlify="true" class="space-y-4">
+        <input type="hidden" name="form-name" value="prayer" />
+        <div>
+          <label class="block text-gray-700">Name</label>
+          <input type="text" name="name" required class="w-full mt-1 p-2 border rounded-md" />
+        </div>
+        <div>
+          <label class="block text-gray-700">Email</label>
+          <input type="email" name="email" required class="w-full mt-1 p-2 border rounded-md" />
+        </div>
+        <div>
+          <label class="block text-gray-700">Prayer Request</label>
+          <textarea name="message" rows="5" required class="w-full mt-1 p-2 border rounded-md"></textarea>
+        </div>
+        <button type="submit" class="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700">Submit</button>
+      </form>
     </div>
   </section>
 
